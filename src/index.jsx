@@ -1,13 +1,20 @@
+import { render } from 'react-dom';
+
 import { One } from 'react-declarative';
+import { Container } from '@mui/material';
 
 import { fields } from './out';
 
-export const App = () => {
+const App = () => {
     return (
-        <One
-            fields={fields}
-        />
+        <Container>
+            <One
+                sx={{ p: 1 }}
+                outlinePaper
+                fields={fields}
+            />
+        </Container>
     );
 }
 
-export default App;
+render(<App />, document.getElementById('root'));

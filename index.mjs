@@ -25,8 +25,7 @@ if (!process.env.SKIP_GENERATE) {
     const userResponceContent = userResponce.choices[0].message.content.trim();
     fs.writeFileSync("./tmp.txt", userResponceContent);
   }
-  console.timeEnd("RAW");
-  
+  console.timeEnd("RAW"); 
 }
 
 if (!process.env.SKIP_TRANSFORM) {
@@ -41,7 +40,7 @@ if (!process.env.SKIP_TRANSFORM) {
     });
     const transformResponce = await createCompletion(chat, userResponceContent);
     const transformResponceContent = transformResponce.choices[0].message.content.trim();
-    fs.writeFileSync("./src/out/index.jsx", transformResponceContent);
+    fs.writeFileSync("./src/out/index.tsx", transformResponceContent);
   }
   console.timeEnd('JSX');  
 }
