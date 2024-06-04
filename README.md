@@ -6,6 +6,11 @@
 
 A ChatGPT powered React Code Generator. Specify what kind of React form you want to build and directly get the code and a live preview.
 
+## Contribute
+
+> [!IMPORTANT]
+> Made by using [react-declarative](https://github.com/react-declarative/react-declarative) to solve your problems. **⭐Star** and **💻Fork** It on github will be appreciated
+
 ## How It's Work
 
 1. The [postinstall.mjs](./scripts/postinstall.mjs) file download `Nous-Hermes-2-Mistral-7B` [LLM](https://en.wikipedia.org/wiki/Large_language_model)
