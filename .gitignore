@@ -1,6 +1,5 @@
 node_modules
 .DS_Store
 Result.md
-src/out/index.jsx
 tmp.txt
 .env

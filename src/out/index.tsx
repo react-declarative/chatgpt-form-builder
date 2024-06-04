@@ -8,7 +8,7 @@ export const fields: IField[] = [
       {
         type: FieldType.Typography,
         typoVariant: "h6",
-        placeholder: "Sign In Information",
+        placeholder: "Sign In",
       },
       {
         type: FieldType.Text,
@@ -16,8 +16,8 @@ export const fields: IField[] = [
         tabletColumns: "4",
         phoneColumns: "12",
         outlined: false,
-        name: "username",
-        title: "Username",
+        name: "email",
+        title: 'Email',
       },
       {
         type: FieldType.Text,
@@ -26,16 +26,7 @@ export const fields: IField[] = [
         phoneColumns: "12",
         outlined: false,
         name: "password",
-        title: "Password",
-      },
-      {
-        type: FieldType.Checkbox,
-        desktopColumns: "4",
-        tabletColumns: "4",
-        phoneColumns: "12",
-        outlined: false,
-        name: "remember_me",
-        title: "Remember Me",
+        title: 'Password',
       },
     ],
   },
